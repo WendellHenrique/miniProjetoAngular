@@ -2,10 +2,10 @@
     <div class="jumbotron">
         <div class="row">
             <div class="col-sm-6">
-                <app-progresso></app-progresso>
+                <app-progresso [progresso]="progresso"></app-progresso>
             </div>
             <div class="col-sm-6">
-                <app-tentativas></app-tentativas>
+                <app-tentativas [tentativas]="tentativas"></app-tentativas>
             </div>
         </div>
         <div class="row">
@@ -15,7 +15,7 @@
             </div>
         </div>
         <div class="form-group">
-            <textarea class="form-control" rows="3" (input)="atualizaResposta($event)"></textarea>
+            <textarea class="form-control" rows="3" (input)="atualizaResposta($event)" [value]="resposta"></textarea>
         </div>
 
         <div class="row">
